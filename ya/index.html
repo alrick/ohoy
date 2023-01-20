@@ -9,6 +9,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
   </head>
   <body>
     <div class="hero min-h-screen bg-base-200">
@@ -70,5 +71,13 @@
         </div>
       </div>
     </div>
+    <script>
+      const jsConfetti = new JSConfetti()
+      jsConfetti.addConfetti({
+        confettiColors: [
+          '#4f000b', '#720026', '#ce4257', '#fdf0d5',
+        ],
+      })
+    </script>
   </body>
 </html>
